@@ -21,7 +21,11 @@ const ContactForm = () => {
       Notify.info(`${name} is already in your phonebook.`);
       return;
     }
-    dispatch(addContact({ name, number }));
+    if (!number) {
+      Notify.failure('Please enter a phone number.');
+      return;
+    }
+    dispatch(addContact({ name, phone: number }));
     setName('');
     setNumber('');
   };

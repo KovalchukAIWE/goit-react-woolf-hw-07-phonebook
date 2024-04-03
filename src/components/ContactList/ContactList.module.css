@@ -1,0 +1,33 @@
+.button {
+  margin-left: 6px;
+  cursor: pointer;
+  padding: 5px 10px;
+  height: 30px;
+  min-width: 80px;
+  border-radius: 8px;
+  background-color: rgb(55, 55, 255);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(65, 65, 183);
+}
+
+.list {
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item {
+  width: calc(100% / 3);
+}
